@@ -20,7 +20,7 @@ struct NavBar: Component {
         ) {
             Dropdown("Key concepts") {
                 Link("Villages", target: Villages() )
-                Link("Districts", target: Districts() )
+                Link("Locations", target: Locations() )
             }
         }
         .navigationItemAlignment(.trailing)

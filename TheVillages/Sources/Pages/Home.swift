@@ -19,7 +19,12 @@ struct Home: StaticPage {
 
         List {
             Link("Villages", target: Villages())
+            Link("Locations", target: Locations())
             Link("Districts", target: Districts())
+            
+            for village in config.villages {
+                Link(village, target: Village(title: village))
+            }
         }
     }
 }

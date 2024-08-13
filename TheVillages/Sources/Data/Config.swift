@@ -16,20 +16,30 @@ func col(_ column: Column) -> Int {
     column.rawValue
 }
 
-var config: Config!
+var config = Config()
+
+var streets: [Street] = []
+struct Street {
+    var id: UUID
+    var mc_id: String
+    var street: String
+    var location: String
+    var village: String
+    var district: String
+    var county: String
+}
 
 class Config {
     var header: [String]
-    var table: [[String]]
     var colors: [Color] = [.gray,.red, .green, .blue, .purple, .lightGreen, .yellow]
+    var table: [[String]]
     var villages: [String]
+    var locations: [String]
+    var districts: [String]
     
-    init(context: PublishingContext) {
-        let url = context.url(forResource: "Streets.csv")
+    init() {
         
-
-        
-        guard let csvString = try? String(contentsOfFile: "/Users/philwigglesworth/Projects/Ignite/TheVillages/Assets/The Villages Street Names.csv", encoding: .utf8) else {
+        guard let csvString = try? String(contentsOfFile: "/Users/philwigglesworth/Projects/mythlandia.github.io/TheVillages/Resources/Streets.csv", encoding: .utf8) else {
             print("CSV file not found")
             fatalError("CSV file not found")
         }
@@ -38,10 +48,69 @@ class Config {
         var table = csvStringToArray( csvString: csvString )
         header = table[0]
         table.removeFirst()
+        
         self.table = table
-
+        
+        for row in table {
+            streets.append(
+                Street(
+                    id: UUID(uuidString: row[0]) ?? UUID(),
+                    mc_id: row[1],
+                    street: row[2],
+                    location: row[3],
+                    village: row[4],
+                    district: row[5],
+                    county: row[6]
+                )
+            )
+        }
+        
         let uniqueVillages = Set(table.map { $0[col(.village)] })
         villages = uniqueVillages.sorted()
+        
+        let uniqueLocations = Set<String>( table.map { Config.locationPrefix( $0[3] ) } )
+        locations = Array(uniqueLocations).sorted()
+        
+        let uniqueDistricts = Set<String>( table.map { $0[5] } )
+        districts = Array(
+            uniqueDistricts).sorted {
+                if let n0 = Int($0) {
+                    if let n1 = Int($1) {
+                        return n0 < n1
+                    } else {
+                        return true
+                    }
+                } else{
+                    return $0 < $1
+                }
+            }
+    }
+    
+    static func locationPrefix(_ location: String) -> String {
+        if let prefixIndex = location.firstIndex(of: "-") {
+            let locationPrefix = location.prefix(upTo: prefixIndex).trimmingCharacters(in: .whitespacesAndNewlines)
+            return String(locationPrefix)
+        } else {
+            return location
+        }
+    }
+    
+    static func locationSuffix(_ location: String) -> String {
+        if let prefixIndex = location.firstIndex(of: "-") {
+            let locationSuffix = location.suffix(from: prefixIndex).trimmingPrefix("-").trimmingCharacters(in: .whitespacesAndNewlines)
+            return String(locationSuffix)
+        } else {
+            return location
+        }
+    }
+    
+    func location(_ locationSuffix: String ) -> String {
+        table
+            .map{ $0[3] }
+            .first(where: {
+                //                print("Looking for '\(locationSuffix)' Checking: '\($0)'")
+                return String($0).hasSuffix(locationSuffix)
+            } ) ?? locationSuffix + " not found"
     }
     
     func sortTable( by column: Int ) {
@@ -73,4 +142,3 @@ func csvStringToArray(csvString: String) -> [[String]] {
     return dataArray
     
 }
-

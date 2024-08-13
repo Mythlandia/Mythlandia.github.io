@@ -864,7 +864,7 @@ SE 171ST,Cooper Loop,Marion - Unit 49,Woodbury,4,Marion
 ,Coral Way,Pinellas Plaza,N/A,SC,Sumter
 SE 76TH,Corapeake Court,Marion - Unit 61,Chatham,4,Marion
 ,Corbett Drive,Sumter - Unit 127,Amelia,6,Sumter
-,Corbin Trail,District 12 Roadway,N/A,12,Sumter
+,Corbin Trail,Location 12 Roadway,N/A,12,Sumter
 ,Corbin Trail,Villages Of Sumter Throughway,N/A,12,Sumter
 ,Corbin Trail,Villages of Southern Oaks Throughway,N/A,SC,Sumter
 ,Cordelia Place,Sumter - Unit 139,Hemingway,7,Sumter
@@ -1296,7 +1296,7 @@ SE 93RD,Exeter Court,Marion - Unit 50,Woodbury,4,Marion
 ,Fellowship Avenue,Sumter - Unit 233,Lake Deaton,10,Sumter
 ,Fenholloway Lane,Sumter - Unit 824 (Sawgrass Villas),St. James,8,Sumter
 ,Fenimore Lane,Sumter - Unit 91,Sunset Pointe,5,Sumter
-,Fenney Way,District 12 Roadway,N/A,12,Sumter
+,Fenney Way,Location 12 Roadway,N/A,12,Sumter
 ,Fenney Way,Villages Of Sumter Throughway,N/A,12,Sumter
 ,Fenster Lane,Sumter - Unit 966 (Antrim Dells),Collier @ Antrim Dells,10,Sumter
 ,Fenwick Loop,Sumter - Unit 197,Sanibel,9,Sumter
@@ -1424,7 +1424,7 @@ SE 172ND,Garden Street,Marion - Unit 215 (Ivystone Villas),Woodbury,4,Marion
 ,Garner Path,VOWL - Unit 44,Newell,14,Lake
 ,Garner Path,VOWL - Unit 48,Newell,14,Lake
 ,Garnet Avenue,Sumter - Unit 942 (Amber Villas),Charlotte,9,Sumter
-,Gartner Drive,District 15 Roadway,N/A,15,Sumter
+,Gartner Drive,Location 15 Roadway,N/A,15,Sumter
 ,Gary Lane,VOWL - Unit 51,Newell,14,Lake
 ,Garza Place,Sumter - Unit 17,Tierra Del Sol,1,Sumter
 ,Gaskin Lane,Sumter - Unit 127,Amelia,6,Sumter
@@ -1616,7 +1616,7 @@ SE 78TH,Harmony Circle,Marion - Unit 222 (Villas Of Sherwood),Chatham,4,Marion
 ,Havana Trail,Sumter - Unit 135,Hadley,7,Sumter
 ,Hawkins Drive,VOSO - Unit 84,Hawkins,13,Sumter
 ,Hawkins Drive,VOSO - Unit 88,Hawkins,13,Sumter
-,Hawkins Drive,District 13 Roadway,N/A,SC,Sumter
+,Hawkins Drive,Location 13 Roadway,N/A,SC,Sumter
 SE 93RD,Hawthorne Avenue,Marion - Unit 48,Springdale,4,Marion
 ,Haynesville Way,Sumter - Unit 108,Virginia Trace,6,Sumter
 ,Hayward Path,VOSO - Unit 125,DeLuna,13,Sumter
@@ -3007,10 +3007,10 @@ SE 83RD,Rawcliffe Court,Marion - Unit 45,Piedmont,4,Marion
 ,Ray Road,VOWL - Unit 72,Lake Denham,14,Lake
 ,Rayburn Court,Sumter - Unit 138,Hemingway,7,Sumter
 ,Rayma Place,VOSO - Unit 131,DeLuna,13,Sumter
-,Reader Path,District 12 Roadway,N/A,12,Sumter
-,Reader Path,District 13 Roadway,Hammock at Fenney,13,Sumter
+,Reader Path,Location 12 Roadway,N/A,12,Sumter
+,Reader Path,Location 13 Roadway,Hammock at Fenney,13,Sumter
 ,Reading Road,Sumter - Unit 204,Dunedin,10,Sumter
-,Reagan Road,District 12 Roadway,N/A,12,Sumter
+,Reagan Road,Location 12 Roadway,N/A,12,Sumter
 ,Rebecca Circle,Lake - Unit 13,Country Club,LL,Lake
 ,Rebusmen Road,VOSO - Unit 37,Monarch Grove,12,Sumter
 ,Red Ash Place,Sumter - Unit 146,Duval,7,Sumter
@@ -3380,7 +3380,7 @@ SE 166TH,Sprung Lane,Marion - Unit 232 (Phillips Villas),Woodbury at Phillips,4,
 ,St. Andrews Blvd.,Lake - Unit 10,Orange Blossom Gardens,LL,Lake
 ,St. Andrews Circle,Lake - Unit 11,Country Club,LL,Lake
 ,St. Andrews Court,Lake - Unit 11,Country Club,LL,Lake
-,St. Catherine Circle,District 13 Roadway,N/A,SC,Sumter
+,St. Catherine Circle,Location 13 Roadway,N/A,SC,Sumter
 ,St. Charles Place,Villages Of Sumter Throughway,N/A,5,Sumter
 ,St. Charles Place,Villages Of Sumter Throughway,N/A,8,Sumter
 ,St. George Avenue,Sumter - Unit 145,Duval,7,Sumter
@@ -3510,7 +3510,7 @@ SE 93RD,Tellfier Terrace,Marion - Unit 50,Woodbury,4,Marion
 ,Teri Terrace,VOSO - Unit 60 (Opal Villas),Bradford,13,Sumter
 ,Ternberry Forest Drive,Sumter - Unit 105,Bridgeport @ Lake Sumter,6,Sumter
 ,Terrebonne Terrace,Sumter - Unit 84,Ashland,5,Sumter
-,Tharp Avenue,District 13 Roadway,N/A,SC,Sumter
+,Tharp Avenue,Location 13 Roadway,N/A,SC,Sumter
 ,Thayer Terrace,Lake - Unit 104 (Reagan Villas),Pine Ridge,11,Lake
 ,Theordore Terrace,VOSO - Unit 124 (DeLuna Verandas South),DeLuna,13,Sumter
 ,Thistle Court,Sumter - Unit 190 (Osceola Hills @ Lake Deaton),Osceola Hills @ Soaring Eagle Preserve,10,Sumter

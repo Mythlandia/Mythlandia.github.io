@@ -26,7 +26,7 @@ struct LakeSumter: StaticPage {
         
         List {
             Link("Villages", target: Villages())
-            Link("Districts", target: Districts())
+            Link("Locations", target: Locations())
         }
     }
 }
